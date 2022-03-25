@@ -299,7 +299,7 @@ public class iTFM_VS {
 						}
 						if(diagonal[t]>att){
 							tca[xx-1+a[pp1]][yy-1+b[pp1]]=tca[xx-1+a[pp1]][yy-1+b[pp1]]+p[t]*diagonal[t];
-							amount[xx+a[pp1]][yy+b[pp1]][1]=amount[xx+a[pp1]][yy+b[pp1]][0]+p[t]*diagonal[t];
+							amount[xx+a[pp1]][yy+b[pp1]][0]=amount[xx+a[pp1]][yy+b[pp1]][0]+p[t]*diagonal[t];
 						}
 						if(facet[t][0]>att){
 							p[n1]=p[n1]+p[t]*facet[t][0];
