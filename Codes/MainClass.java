@@ -7,8 +7,10 @@ public class MainClass {
 	public static void main(String[] args) throws IOException{
 		
 		//Obtain the path of files
-		String importPath=ImportPath.getPath();
-		String exportPath=OutPath.getPath();
+		//String importPath=ImportPath.getPath();
+		//String exportPath=OutPath.getPath();
+		String importPath="C:\\Users\\le\\Desktop\\多流向算法论文\\理想地形（加边）\\马鞍面1.txt";
+		String exportPath="C:\\Users\\le\\Desktop\\多流向算法论文\\算法结果TCA\\iTFM_GS\\马鞍面1.txt";
 		
 		//Read the header of the DEM file
 		String[] header=DataImport.readTop(importPath);
@@ -22,6 +24,8 @@ public class MainClass {
 		//Import the DEM
 		//Here two rows and two cols are with noData value are added to the DEM for simple calculation.
 		double[][] dem=DataImport.gridRead(importPath, x, y, nodata);
+		
+		double[][] dem_no_sink=FillSink.fill(dem, -9999);  //Remove flats and sinks, the gradient is 0.001 m.
 		
 		//Calculate the TCA
 		//short[][] dir=iFAD8.direction(dem, cellsize);
