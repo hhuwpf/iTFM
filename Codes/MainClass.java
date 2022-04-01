@@ -7,10 +7,8 @@ public class MainClass {
 	public static void main(String[] args) throws IOException{
 		
 		//Obtain the path of files
-		//String importPath=ImportPath.getPath();
-		//String exportPath=OutPath.getPath();
-		String importPath="C:\\Users\\le\\Desktop\\多流向算法论文\\理想地形（加边）\\马鞍面1.txt";
-		String exportPath="C:\\Users\\le\\Desktop\\多流向算法论文\\算法结果TCA\\iTFM_GS\\马鞍面1.txt";
+		String importPath=ImportPath.getPath();  //Path of DEM
+		String exportPath=OutPath.getPath();  //Path to save the data
 		
 		//Read the header of the DEM file
 		String[] header=DataImport.readTop(importPath);
