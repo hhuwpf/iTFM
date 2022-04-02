@@ -53,4 +53,4 @@ Himmelblau.txt: an ASCII DEM file for example.
 
 1. The import DEM should be in the ASCII TXT format, and please keep the six rows of headers.
 
-2. There is no step to remove flats and depressions in the codes, so pre-process is required.
+2. There is a function to remove flats and depressions in the codes, but it is disabled.
