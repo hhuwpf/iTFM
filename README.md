@@ -37,7 +37,9 @@ E-mail: jtliu@hhu.edu.cn
 --------------------------------------------------------------------------
 **2. The Algorithms**
 
-The iTFM algorithms are described in Wu et al. [2020]. The Java codes that implement the iTFM as well as several existing algorithms are provided. The original paper should be cited appropriately whenever iTFM is used.
+The iTFM algorithms are described in Wu et al. [2022]. The Java codes that implement the iTFM as well as several existing algorithms are provided. The original paper should be cited appropriately whenever iTFM is used.
+Citation:
+Wu, P., Liu, J., Han, X., Feng, M., Fei, J., & Shen, X. (2022). An improved triangular form-based multiple flow direction algorithm for determining the nonuniform flow domain over grid networks. Water Resources Research, 58, e2021WR031706. https://doi.org/10.1029/2021WR031706
 
 --------------------------------------------------------------------------
 **3. File Description**
